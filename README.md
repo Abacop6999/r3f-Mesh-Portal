@@ -8,5 +8,4 @@ yarn
 yarn dev
 ```
 
-
-![r3f-portal-material](https://github.com/wass08/r3f-mesh-portal-material/assets/6551176/a010e5a0-f4b7-46c4-b43d-81eda6e88e7b)
+![portal](https://github.com/Abacop6999/r3f-Mesh-Portal/assets/120139066/d83ac09f-9206-46a8-8e38-bd574a6d49cb)
