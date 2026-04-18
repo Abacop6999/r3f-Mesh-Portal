@@ -6,12 +6,11 @@ Command: npx gltfjsx@6.1.12 public/models/Bunny.gltf -o src/components/Bunny.jsx
 import React, { useEffect, useRef } from "react";
 import { useGLTF, useAnimations } from "@react-three/drei";
 
-export function Bunny({hovered, ...props}) {
+export function Bunny({ hovered, ...props }) {
   const group = useRef();
   const { nodes, materials, animations } = useGLTF("/models/Bunny.gltf");
   const { actions } = useAnimations(animations, group);
 
-  // console.log(actions);
   useEffect(() => {
     const anim = hovered ? "Jump_Idle" : "Idle";
     actions[anim].reset().fadeIn(0.5).play();

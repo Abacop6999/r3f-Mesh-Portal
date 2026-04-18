@@ -11,8 +11,6 @@ export function Birb({ hovered, ...props }) {
   const { nodes, materials, animations } = useGLTF("/models/Birb.gltf");
   const { actions } = useAnimations(animations, group);
 
-  console.log(actions);
-
   useEffect(() => {
     const anim = hovered ? "Wave" : "Idle";
     actions[anim].reset().fadeIn(0.5).play();
